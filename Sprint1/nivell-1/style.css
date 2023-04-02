@@ -115,4 +115,49 @@
     height: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* pantallas más pequeñas de 768px */
+    .container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #box7 {
+      width: 100%;
+    }
+  
+    #box8 {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box1-3 {
+      width: 90%;
+    }
+  
+    #box10 {
+      width: 90%;
+    }
+  
+    #box11,
+    #box12 {
+      width: 45%;
+    }
+  }
 
+  @media only screen and (max-width: 480px) {
+    /* CSS rules para telefonos */
+    .general-container {
+        max-width: 100%;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+    }
+   
+}
