@@ -1,14 +1,11 @@
 
 .general-container{
-    display: flex;
-    flex-direction: column;
     max-width: 1200px;
     background-color: white;
  }
 
  /* Big 3 containers */
 .container{
-        width: 1200px;
         height:200px;
         border: 20px solid black;
  }
@@ -21,16 +18,12 @@
 #container1{
         height:150px;
         border: 20px solid black;
-        background-color: rgb(255, 123, 0);
 }
 
 #container2{
-    width: 100%;
     height:200px;
     display: flex;
-    flex-direction: column;
     border: 20px solid black;
-    background-color: red;
 }
 
 #container3{
@@ -53,62 +46,80 @@
 #box2{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    position: relative;
     height: 70px;
     border-bottom: 10px solid black;   
-    background-color: rgb(228, 103, 2);
+    background-color:#EF7B3F;
 }
 
 #box6{
-    position: absolute;
-    top: 23%;
-    left: 46%;
-    transform: translate(-50%, -50%);
     height: 20px;
-    width: 1150px;
+    width: 95%;
     background-color: rgb(228, 156, 2);
 }
 
 .box1-1{
     height: 20px;
-    width: 150px;
+    width: 10%;
     background-color: rgba(243, 68, 56, 0.692);
 }
 
 .box1-2{
     height: 20px;
-    width: 750px;
+    width: 70%;
     background-color: rgba(243, 68, 56, 0.692);
 }
 
 
 /* Second container */
-#box7{
-    height: 200px;
+
+#boxBlue{
     width: 70%;
-    display: flex;
+    border-right: 20px solid black;  
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-evenly;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-right: 10px solid black;   
-    background-color: rgb(1, 148, 158);
+    background-color: rgba(41, 78, 179, 0.692);
 }
 
-#box8{
-    height: 20px;
-    width: 950%;
+#sectionLightBlue{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;  
     flex-wrap: wrap;
-    background-color: rgba(243, 68, 56, 0.692);
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.box1-3{
+#sectionDarkBlue{
+    background-color: rgb(42, 223, 236);
     height: 20px;
-    width: 400px;
-    background-color: rgba(243, 68, 56, 0.692);
+    width: 95%;
+}
+
+#boxRed{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+    padding-top: 40px;
+    background-color: rgba(240, 39, 24, 0.692);
+}
+
+.yellowSpan{
+    height: 20px;
+    width: 90%;
+    background-color: yellow;
+}
+
+.lightBlue{
+    height: 20px;
+    width: 45%;
+    background-color: rgba(3, 165, 240, 0.692);
 }
 
 #box10{
@@ -117,47 +128,55 @@
 
 @media only screen and (max-width: 768px) {
     /* pantallas más pequeñas de 768px */
-    .container {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+   
+    #container2{
+        height: 300px;
+        flex-direction: column;
+        border: 20px solid yellow;
     }
-  
-    #box7 {
-      width: 100%;
+
+    #boxBlue{
+        width: 100%;
+        height: 70%;
+        border-bottom: 20px solid yellow;  
+        border-right: none;  
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } 
+    #boxRed{
+        width: 100%;
+        height: 30%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } 
+    
+    #sectionLightBlue{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
     }
-  
-    #box8 {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .box1-3 {
-      width: 90%;
-    }
-  
-    #box10 {
-      width: 90%;
-    }
-  
-    #box11,
-    #box12 {
-      width: 45%;
-    }
+    
   }
 
   @media only screen and (max-width: 480px) {
     /* CSS rules para telefonos */
-    .general-container {
-        max-width: 100%;
+  
+    #container2{
+        height: 400px;
     }
-    
-    .container {
-        width: 100%;
-        height: auto;
+    #box1{
+        flex-direction: column;
+    }
+    .box1-1{
+        width: 70%;
+    }
+
+    #sectionDarkBlue{
+        margin-top: 20px;
+        width: 50%;
     }
    
 }
